@@ -22,137 +22,163 @@
 			.sider{grid-area: side; background-color: rgb(245, 247, 249);}
 			.header{grid-area: head; background-color: black}
 
-			.grid-container > div {
-			  text-align: center;
-			}
-
 			.main-grid{
 				grid-area: main;
 				display: grid;
 				grid-template-areas:
 				"Alk Niko"
 				"THC Kokain"
-				"MDMA andere";
-				background-image: url("backimage.jpeg");
-				height: 100%; 
+				"MDMA andere";		
+				text-align: center;
+				padding: 2.5%;
+				gap: 2.5%;
+			}
+
+
+			.Alki{
+				grid-area: Alk;
+				order-radius: 20px;		
+				background-image: url("T-4.jpeg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
-			
 
-			.Alki{
-				display: grid;
-				grid-area: 2/2;
-				grid-template: 15% 1fr 1fr 15%/1fr;		
-			}
 
 			.Niki{
-				display: grid;
-				grid-area: 2/3;
-				grid-template: 15% 1fr 1fr 15%/1fr;				
+				grid-area: Niko;
+				border-radius: 20px;
+				background-image: url("Tumor.jpeg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			.THi{
-				display: grid;
-				grid-area: 3/2;
-				grid-template: 15% 1fr 1fr 15%/1fr;				
+				grid-area: THC;
+				border-radius: 20px;		
+				background-image: url("10GUY.jpeg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			.Kokai{
-				display: grid;
-				grid-area: 3/3;
-				grid-template: 15% 1fr 1fr 15%/1fr;				
+				grid-area: Kokain;
+				border-radius: 20px;		
+				background-image: url("Schneekanone.jpeg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			.MDMi{
-				display: grid;
-				grid-area: 4/2;
-				grid-template: 15% 1fr 1fr 15%/1fr;				
+				grid-area: MDMA;
+				border-radius: 20px;		
+				background-image: url("MDMA.jpeg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
 			}
 
 			.andi{
-				display: grid;
-				grid-area: 4/3;
-				grid-template: 15% 1fr 1fr 15%/1fr;				
+				grid-area: andere;
+				border-radius: 20px;		
+				background-image: url("Kloppo.jpeg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
-			.upsect{
-				grid-area: 2/1;
-			}
-
-			.downsect{
-				grid-area: 3/1;
-			}
 
 			p.clockdesign{
 				color:black; 
-				margin: auto; 
-				padding:0; 
-				font-size:200%; 
+				margin: auto;
+				padding: 0; 
+				font-size:175%; 
 				background-color: white; 
 				border-radius: 20px; 
-				width: 325px
+				width: 350px;
+				margin-top: 5%;
 			}
 
 			.sbutton{
 				font-size: 20px;
 				border-radius:25px;
-				background-color: white; 
+				background-color: rgb(245, 247, 249); 
 				font: bold;
-				width: 250px;
+				width: 175px;
+				text-align: center;
+				margin-top: 10%;
+				padding: 0;
 			}
+
+			.navbuttons{
+				font-size: 24px;
+				text-align: left;
+				padding: 12px 8px 8px 16px;
+				text-decoration: none;
+				color: black;
+				display: block;
+			}
+
+			.navbuttons:hover {
+			  color: white;
+			  background-color: #555;
+			}
+
 
 		</style>
 
 	</head>
 	<body>
 
-
 		<div class="grid-container">
-			<div class="main-grid">
-				<div class="Alki">
-			    	<div class="upsect"><button type="button" onclick="auchdabei.play();", class="sbutton">Alkohol</button></div>
-			    </div>
-				<div class="Niki">
-					<div class="upsect"><button type="button" onclick="cancer.play();", class="sbutton">Nikotin</button></div>
-			    </div>
-				<div class="THi">
-					<div class="upsect"><button type="button" onclick="bong.play();", class="sbutton">THC</button></div>
-				</div>
-				<div class="Alki">
-					<div class="downsect"><p id="Alk", class="clockdesign"></p></div>
-				</div>
-				<div class="Niki">
-					<div class="downsect"><p id="Nik", class="clockdesign"></p></div>
-				</div>
-				<div class="THi">
-					<div class="downsect"><p id="TH", class="clockdesign"></p></div>
-	           	 </div>
-				<div class="Kokai">
-		            <div class="upsect"><button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button></div>
+		<div class="main-grid">
+		<div class="Alki">
+			<button type="button" onclick="auchdabei.play();", class="sbutton">Alkohol</button>
+			<p id="Alk", class="clockdesign"></p>
+		</div>
+		<div class="Niki">
+			<button type="button" onclick="cancer.play();", class="sbutton">Nikotin</button>
+			<p id="Nik", class="clockdesign"></p>
+		</div>
+		<div class="THi">
+			<button type="button" onclick="bong.play();", class="sbutton">THC</button>
+			<p id="TH", class="clockdesign"></p>
+	    		</div>
+        	    <div class="Kokai">
+        	    	<button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button>
+	            	<p id="Koka", class="clockdesign"></p>
 				</div>
 				<div class="MDMi">
-					<div class="upsect"><button type="button" onclick="yeah.play();", class="sbutton">MDMA</button></div>
-			    </div>
-				<div class="andi">
-					<div class="upsect"><button type="button" onclick="eagle.play();", class="sbutton">Jurgen Klopp</button></div>
-			   	</div>
-	            	<div class="Kokai">
-	            	<div class="downsect"><p id="Koka", class="clockdesign"></p></div>
-				</div>
-				<div class="MDMi">
-					<div class="downsect"><p id="MDM", class="clockdesign"></p></div>
+					<button type="button" onclick="yeah.play();", class="sbutton">MDMA</button>
+					<p id="MDM", class="clockdesign"></p>
 				</div>
 				<div class="andi">
-					<div class="downsect"><p id="and", class="clockdesign"></p></div>
+					<button type="button" onclick="eagle.play();", class="sbutton">Jurgen Klopp</button>
+					<p id="and", class="clockdesign"></p>
 				</div>
+				
 	   		</div>
 
-	   		<div class="sider"></div>
-			<div class="header"></div>
+	   		<div class="sider">
+
+			  <a href="#Alkohol" class="navbuttons">Alkohol</a>
+			  <a href="#Nikotin" class="navbuttons">Nikotin</a>
+			  <a href="#THC" class="navbuttons">THC</a>
+			  <a href="#Kokain" class="navbuttons">Kokain</a>
+			  <a href="#MDMA" class="navbuttons">MDMA</a>
+			  <a href="#Kloppo" class="navbuttons">Kloppo</a>
+			  <a href="#Der_connoisseur" class="navbuttons">Der Connoisseur</a>
+
+			</div>
+
+		<div class="header"><h1 style="color: white; margin-left: 10px;">He baud' to get lesh...</h1></div>
    			
 	   	</div>
+
 
 
 		<script>
