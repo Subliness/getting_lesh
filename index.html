@@ -115,40 +115,41 @@
 
 		<div class="grid-container">
 			<div class="Alki">
-		    	<div class="upAlki"><h1 style="color:white; margin:0; padding:0">Alkohol</h1></div>
+		    	<div class="upAlki"><button type="button" onclick="auchdabei.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Alkohol</button></div>
 		    </div>
 			<div class="Niki">
-				<div class="upNiki"><h1 style="color:white; margin:0; padding:0">Nikotin</h1></div>
+				<div class="upNiki"><<button type="button" onclick="cancer.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Nikotin</button></div>
 		    </div>
 			<div class="THi">
-				<div class="upTHi"><h1 style="color:white; margin:0; padding:0">THC</h1></div>
+				<div class="upTHi"><button type="button" onclick="bong.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">THC</button></div>
 			</div>
 			<div class="Alki">
-				<div class="downAlki"><p id="Alk", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+				<div class="downAlki">
+						<p id="Alk", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
 			</div>
 			<div class="Niki">
-				<div class="downNiki"><p id="Nik", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+				<div class="downNiki"><p id="Nik", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
 			</div>
 			<div class="THi">
-				<div class="downTHi"><p id="TH", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+				<div class="downTHi"><p id="TH", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
             </div>
 			<div class="Kokai">
-	            <div class="upKokai"><h1 style="color:white; margin:0; padding:0">Kokain</h1></div>
+	            <div class="upKokai"><button type="button" onclick="siuuu.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Kokain</button></div>
 			</div>
 			<div class="MDMi">
-				<div class="upMDMi"><h1 style="color:white; margin:0; padding:0">MDMA</h1></div>
+				<div class="upMDMi"><button type="button" onclick="yeah.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">MDMA</button></div>
 		    </div>
 			<div class="andi">
-				<div class="upandi"><h1 style="color:white; margin:0; padding:0">Jurgen Klopp</h1></div>
+				<div class="upandi"><button type="button" onclick="eagle.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Jurgen Klopp</button></div>
 		   	</div>
             <div class="Kokai">
-            	<div class="downKokai"><p id="Koka", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+            	<div class="downKokai"><p id="Koka", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
 			</div>
 			<div class="MDMi">
-				<div class="downMDMi"><p id="MDM", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+				<div class="downMDMi"><p id="MDM", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
 			</div>
 			<div class="andi">
-				<div class="downandi"><p id="and", style="color:white; margin:0; padding:0; font-size:200%"></p></div>
+				<div class="downandi"><p id="and", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 350px"></p></div>
 	   		</div>
 	   	</div>
 
@@ -228,6 +229,24 @@
 
 
 			}, 1000);
+
+			const siuuu=new Audio();
+			siuuu.src="./Siuuu.mp3";
+
+			const auchdabei=new Audio();
+			auchdabei.src="./auchdabei.mp3";
+
+			const cancer=new Audio();
+			cancer.src="./Cancer.mp3";
+
+			const bong=new Audio();
+			bong.src="./Bong.mp3";
+
+			const yeah=new Audio();
+			yeah.src="./ohyeah.mp3";
+
+			const eagle=new Audio();
+			eagle.src="./eagle.mp3";
 
 		</script>
 
