@@ -62,50 +62,31 @@
 				grid-template: 15% 1fr 1fr 15%/1fr;				
 			}
 
-			.upAlki{
+			.upsect{
 				grid-area: 2/1;
 			}
 
-			.downAlki{
+			.downsect{
 				grid-area: 3/1;
 			}
 
-			.upNiki{
-				grid-area: 2/1;
+			p.clockdesign{
+				color:black; 
+				margin: auto; 
+				padding:0; 
+				font-size:200%; 
+				background-color: white; 
+				border-radius: 20px; 
+				width: 350px
 			}
 
-			.downNiki{
-				grid-area: 3/1;
+			.sbutton{
+				font-size: 20px;
+				border-radius:25px;
+				background-color: white; 
+				font: bold;
+				width: 250px;
 			}
-			.upTHi{
-				grid-area: 2/1;
-			}
-
-			.downTHi{
-				grid-area: 3/1;
-			}
-			.upKokai{
-				grid-area: 2/1;
-			}
-
-			.downKokai{
-				grid-area: 3/1;
-			}
-			.upMDMi{
-				grid-area: 2/1;
-			}
-
-			.downMDMi{
-				grid-area: 3/1;
-			}
-			.upandi{
-				grid-area: 2/1;
-			}
-
-			.downandi{
-				grid-area: 3/1;
-			}
-
 
 		</style>
 
@@ -115,43 +96,43 @@
 
 		<div class="grid-container">
 			<div class="Alki">
-		    	<div class="upAlki"><button type="button" onclick="auchdabei.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Alkohol</button></div>
-		    </div>
+				<div class="upsect"><button type="button" onclick="auchdabei.play();", class="sbutton">Alkohol</button></div>
+			</div>
 			<div class="Niki">
-				<div class="upNiki"><<button type="button" onclick="cancer.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Nikotin</button></div>
-		    </div>
+				<div class="upsect"><<button type="button" onclick="cancer.play();", class="sbutton">Nikotin</button></div>
+			</div>
 			<div class="THi">
-				<div class="upTHi"><button type="button" onclick="bong.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">THC</button></div>
+				<div class="upsect"><button type="button" onclick="bong.play();", class="sbutton">THC</button></div>
 			</div>
 			<div class="Alki">
-				<div class="downAlki">
-						<p id="Alk", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
+				<div class="downsect"><p id="Alk", class="clockdesign"></p></div>
 			</div>
 			<div class="Niki">
-				<div class="downNiki"><p id="Nik", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
+				<div class="downsect"><p id="Nik", class="clockdesign"></p></div>
 			</div>
 			<div class="THi">
-				<div class="downTHi"><p id="TH", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
-            </div>
+				<div class="downsect"><p id="TH", class="clockdesign"></p></div>
+			</div>
 			<div class="Kokai">
-	            <div class="upKokai"><button type="button" onclick="siuuu.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Kokain</button></div>
+				<div class="upsect"><button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button></div>
 			</div>
 			<div class="MDMi">
-				<div class="upMDMi"><button type="button" onclick="yeah.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">MDMA</button></div>
-		    </div>
+				<div class="upsect"><button type="button" onclick="yeah.play();", class="sbutton">MDMA</button></div>
+			</div>
 			<div class="andi">
-				<div class="upandi"><button type="button" onclick="eagle.play();", style="font-size: 20px;border-radius:25px; background-color: white; font: bold; width: 250px">Jurgen Klopp</button></div>
-		   	</div>
-            <div class="Kokai">
-            	<div class="downKokai"><p id="Koka", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
+				<div class="upsect"><button type="button" onclick="eagle.play();", class="sbutton">Jurgen Klopp</button></div>
+			</div>
+			<div class="Kokai">
+				<div class="downsect"><p id="Koka", class="clockdesign"></p></div>
 			</div>
 			<div class="MDMi">
-				<div class="downMDMi"><p id="MDM", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
+				<div class="downsect"><p id="MDM", class="clockdesign"></p></div>
 			</div>
 			<div class="andi">
-				<div class="downandi"><p id="and", style="color:black; margin: auto; padding:0; font-size:200%; background-color: white; border-radius: 20px; width: 325px"></p></div>
-	   		</div>
+				<div class="downsect"><p id="and", class="clockdesign"></p></div>
+			</div>
 	   	</div>
+
 
 
 
