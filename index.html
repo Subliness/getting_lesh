@@ -7,24 +7,39 @@
 		<title>baud-to-get-lesh</title>
 
 		<style>
-			body {
+			.grid-container{
+				display:grid;
+				grid-template: 8% 1fr 1fr 1fr/15% 1fr 1fr;
+				grid-template-areas:
+				"head head head"
+				"side main main"
+				"side main main"
+				"side main main";
+				width: 100vw;
+  				height: 100vh;
+			}
+
+			.sider{grid-area: side; background-color: rgb(245, 247, 249);}
+			.header{grid-area: head; background-color: black}
+
+			.grid-container > div {
+			  text-align: center;
+			}
+
+			.main-grid{
+				grid-area: main;
+				display: grid;
+				grid-template-areas:
+				"Alk Niko"
+				"THC Kokain"
+				"MDMA andere";
 				background-image: url("backimage.jpeg");
 				height: 100%; 
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
-
-			.grid-container{
-				display:grid;
-				grid-template: 5% 1fr 1fr 1fr 5%/15% 1fr 1fr 15%;
-				width: 100vw;
-  				height: 100vh;
-			}
-
-			.grid-container > div {
-			  text-align: center;
-			}
+			
 
 			.Alki{
 				display: grid;
@@ -95,45 +110,49 @@
 
 
 		<div class="grid-container">
-			<div class="Alki">
-				<div class="upsect"><button type="button" onclick="auchdabei.play();", class="sbutton">Alkohol</button></div>
-			</div>
-			<div class="Niki">
-				<div class="upsect"><<button type="button" onclick="cancer.play();", class="sbutton">Nikotin</button></div>
-			</div>
-			<div class="THi">
-				<div class="upsect"><button type="button" onclick="bong.play();", class="sbutton">THC</button></div>
-			</div>
-			<div class="Alki">
-				<div class="downsect"><p id="Alk", class="clockdesign"></p></div>
-			</div>
-			<div class="Niki">
-				<div class="downsect"><p id="Nik", class="clockdesign"></p></div>
-			</div>
-			<div class="THi">
-				<div class="downsect"><p id="TH", class="clockdesign"></p></div>
-			</div>
-			<div class="Kokai">
-				<div class="upsect"><button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button></div>
-			</div>
-			<div class="MDMi">
-				<div class="upsect"><button type="button" onclick="yeah.play();", class="sbutton">MDMA</button></div>
-			</div>
-			<div class="andi">
-				<div class="upsect"><button type="button" onclick="eagle.play();", class="sbutton">Jurgen Klopp</button></div>
-			</div>
-			<div class="Kokai">
-				<div class="downsect"><p id="Koka", class="clockdesign"></p></div>
-			</div>
-			<div class="MDMi">
-				<div class="downsect"><p id="MDM", class="clockdesign"></p></div>
-			</div>
-			<div class="andi">
-				<div class="downsect"><p id="and", class="clockdesign"></p></div>
-			</div>
+			<div class="main-grid">
+				<div class="Alki">
+			    	<div class="upsect"><button type="button" onclick="auchdabei.play();", class="sbutton">Alkohol</button></div>
+			    </div>
+				<div class="Niki">
+					<div class="upsect"><button type="button" onclick="cancer.play();", class="sbutton">Nikotin</button></div>
+			    </div>
+				<div class="THi">
+					<div class="upsect"><button type="button" onclick="bong.play();", class="sbutton">THC</button></div>
+				</div>
+				<div class="Alki">
+					<div class="downsect"><p id="Alk", class="clockdesign"></p></div>
+				</div>
+				<div class="Niki">
+					<div class="downsect"><p id="Nik", class="clockdesign"></p></div>
+				</div>
+				<div class="THi">
+					<div class="downsect"><p id="TH", class="clockdesign"></p></div>
+	           	 </div>
+				<div class="Kokai">
+		            <div class="upsect"><button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button></div>
+				</div>
+				<div class="MDMi">
+					<div class="upsect"><button type="button" onclick="yeah.play();", class="sbutton">MDMA</button></div>
+			    </div>
+				<div class="andi">
+					<div class="upsect"><button type="button" onclick="eagle.play();", class="sbutton">Jurgen Klopp</button></div>
+			   	</div>
+	            	<div class="Kokai">
+	            	<div class="downsect"><p id="Koka", class="clockdesign"></p></div>
+				</div>
+				<div class="MDMi">
+					<div class="downsect"><p id="MDM", class="clockdesign"></p></div>
+				</div>
+				<div class="andi">
+					<div class="downsect"><p id="and", class="clockdesign"></p></div>
+				</div>
+	   		</div>
+
+	   		<div class="sider"></div>
+			<div class="header"></div>
+   			
 	   	</div>
-
-
 
 
 		<script>
