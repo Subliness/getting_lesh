@@ -12,18 +12,30 @@
 
 			.grid-container{
 				display:grid;
-				grid-template: 8% 1fr 1fr 1fr/15% 1fr 1fr;
+				grid-template: 8% 1fr 1fr 1fr/1fr 1fr;
 				grid-template-areas:
-				"head head head"
-				"side main main"
-				"side main main"
-				"side main main";
+				"head head"
+				"main main"
+				"main main"
+				"main main";
 				width: 100vw;
   				height: 100vh;
 			}
 
-			.sider{grid-area: side; background-color: rgb(245, 247, 249);}
 			.header{grid-area: head; background-color: black}
+
+			.sidepanel  {
+			  width: 0;
+			  position: fixed;
+			  z-index: 1;
+			  height: 100vh;
+			  top: 0;
+			  left: 0;
+			  background-color: black;
+			  overflow-x: hidden;
+			  transition: 0.5s;
+			  padding-top: 5px;
+			}
 
 			.main-grid{
 				grid-area: main;
@@ -131,7 +143,27 @@
 			  color: white;
 			  background-color: #555;
 			}
+			
+			.closebtn {
+			  position: absolute;
+			  top: 0;
+			  right: 5px;
+			  font-size: 36px;
+			  color: #818181;
+			}
 
+			.closebtn:hover {
+				color: white;
+			}
+
+			.openbtn {
+			  font-size: 20px;
+			  cursor: pointer;
+			  background-color: black;
+			  color: white;
+			  padding: 0;
+			  border: none;
+			}
 
 		</style>
 
@@ -167,7 +199,12 @@
 				
 	   		</div>
 
-	   		<div class="sider">
+	   		<div class="header"><button class="openbtn" onclick="openNav()">=</button></div>
+
+	   		<div id="mySidepanel" class="sidepanel">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-decoration: none; font-size: 200%">x</a>
+
+  				<a href="file:///Users/hakan/Scripts/baut-to-get-lesh/index.html" class="navbuttons">Abstinenzerhalt.org</a1>
 
 			  <a href="Alkohol.html" class="navbuttons">Alkohol</a>
 			  <a href="Nikotin.html" class="navbuttons">Nikotin</a>
@@ -179,8 +216,6 @@
   			  <a href="About_us.html" class="navbuttons">About us</a>
 
 			</div>
-
-	   		<div class="header"><a href="#" style="text-decoration: none;"><h1 style="color: white; margin-left: 10px;">Abstinenzerhalt.org</h1></a1></div>
    			
 	   	</div>
 
