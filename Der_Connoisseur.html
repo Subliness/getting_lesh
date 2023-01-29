@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UFT-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<title>baut-to-get-lesh</title>
+
+		<style>
+
+
+			.grid-container{
+				display:grid;
+				grid-template: 8% 1fr 1fr 1fr/15% 1fr 1fr;
+				grid-template-areas:
+				"head head head"
+				"side main main"
+				"side main main"
+				"side main main";
+				width: 100vw;
+  				height: 100vh;
+			}
+
+			.sider{grid-area: side; background-color: rgb(245, 247, 249);}
+			.header{grid-area: head; background-color: black}
+
+			.main-grid{
+				grid-area: main;
+				display: grid;
+				grid-template-columns: 70% 1fr;
+				grid-template-rows: 7.5% 1fr 7.5%;
+				grid-template-areas: 
+				"headliner headliner"
+				"text picture"
+				"text description";
+				text-align: left;
+			}
+
+			.headline{
+				grid-area: headliner;
+				background-color: rgb(245, 247, 249);
+			}
+
+			.content{
+				grid-area: text;
+				padding: 2%;
+			}
+
+			.navbuttons{
+				font-size: 24px;
+				text-align: left;
+				padding: 12px 8px 8px 16px;
+				text-decoration: none;
+				color: black;
+				display: block;
+			}
+
+			.navbuttons:hover {
+			  color: white;
+			  background-color: #555;
+			}
+
+			.pict{
+				grid-area: picture;
+				background-image: url(conno.jpeg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.descr{
+				grid-area: description;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="grid-container">
+			<div class="main-grid">
+				
+				<div class="headline"><p1 style="font-size: 275%; margin-left: 0.5%">Der Connoisseur</p1></div>
+				
+				<div class="content"><p1 style="font-size: 150%;">Der Connoisseur ist ein eppendorfer Junggeselle und zeichnet sich besonders durch sein Interesse an verschiedenen physiologisch wirksamen Substanzen und seine Neigung zu Schabernack aus.
+				<br>
+				<br>Vieles ist vom Connoisseur bekannt, nicht zuletzt, weil er sehr gespraechig ist und seinen Mitmenschen stets sehr offen begegnet.
+				<br>
+				<br>Seine besonderen Faehigkeiten sind unter anderem sein ausgesprochener Sinn fuer Inneneinrichtung und seine Konstruktionen von interkontinentalen ballistischen Raketen, mit denen er oft in die Stratosphaere fliegt.
+
+				</p1></div>
+
+				<div class="pict"></div>
+				<div class="descr" style="font-size: 120%">Der Connoisseur, wie man ihn in einem oertlichen Park antreffen kann.</div>
+
+	   		</div>
+
+	   		<div class="sider">
+
+			  <a href="/Alkohol" class="navbuttons">Alkohol</a>
+			  <a href="/Nikotin" class="navbuttons">Nikotin</a>
+			  <a href="/THC" class="navbuttons">THC</a>
+			  <a href="/Kokain" class="navbuttons">Kokain</a>
+			  <a href="/MDMA" class="navbuttons">MDMA</a>
+			  <a href="/Kloppo" class="navbuttons">Kloppo</a>
+			  <a href="/Der_Connoisseur" class="navbuttons">Der Connoisseur</a>
+  			  <a href="/About_us" class="navbuttons">About us</a>
+
+			</div>
+
+	   		<div class="header"><a href="https://subliness.github.io/getting_lesh/" style="text-decoration: none;"><h1 style="color: white; margin-left: 10px;">Abstinenzerhalt.org</h1></a1></div>
+   			
+	   	</div>
+
+
+
+		<script>
+
+		</script>
+
+	</body>
+
+</html>
