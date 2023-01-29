@@ -188,19 +188,15 @@
 		<script>
 			var Alk = new Date("Jan 25, 2023 22:01:44").getTime();
 
-			var Nik = new Date("Jan 21, 2023 0:28:17").getTime();
-
-			var TH = new Date("Jan 21, 2023 0:37:45").getTime();
-
 			var Koka = new Date("Sep 19, 2022 0:11:27").getTime();
 
 			var MDM = new Date("Jun 10, 2022 0:23:52").getTime();
 
 			var and = new Date("Jan 22, 2023 5:15:34").getTime();
 
-			const drugs = [Alk, Nik, TH, Koka , MDM , and];
+			const drugs = [Alk, Koka , MDM , and];
 
-			const names = ["Alk", "Nik", "TH", "Koka", "MDM", "and"]
+			const names = ["Alk", "Koka", "MDM", "and"]
 
 			var x = setInterval(function() {
 
@@ -218,6 +214,11 @@
 				}
 
 			}, 1000);
+			
+			document.getElementById("Nik").innerHTML="currently smoking"
+			document.getElementById("TH").innerHTML="currently smoking"
+			
+			
 
 			const siuuu=new Audio();
 			siuuu.src="./Siuuu.mp3";
