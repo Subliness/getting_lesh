@@ -8,6 +8,10 @@
 		<base href="https://subliness.github.io/getting_lesh/" target="_self">
 
 		<style>
+			
+			body {
+				margin:0 ;
+			}
 
 
 			.grid-container{
@@ -185,7 +189,7 @@
 					<p id="TH", class="clockdesign"></p>
 	            </div>
         	    <div class="Kokai">
-        	    	<button type="button" onclick="siuuu.play();", class="sbutton">Kokain</button>
+        	    	<button type="button" onclick="siuuu.play();", class="sbutton">Schneekanone</button>
 	            	<p id="Koka", class="clockdesign"></p>
 				</div>
 				<div class="MDMi">
@@ -222,17 +226,17 @@
 
 
 		<script>
-			var Alk = new Date("Jan 25, 2023 22:01:44").getTime();
+			var Alk = new Date("Feb 03, 2023 22:01:44").getTime();
 
 			var Koka = new Date("Sep 19, 2022 0:11:27").getTime();
 
 			var MDM = new Date("Sep 21, 2022 0:23:52").getTime();
 
-			var and = new Date("Jan 22, 2023 5:15:34").getTime();
+			var and = new Date("Feb 04, 2023 5:15:34").getTime();
 
-			const drugs = [Alk, Koka , MDM , and];
+			const drugs = [Alk, MDM , and];
 
-			const names = ["Alk", "Koka", "MDM", "and"]
+			const names = ["Alk", "MDM", "and"]
 
 			var x = setInterval(function() {
 
@@ -259,6 +263,7 @@
 			  document.getElementById("mySidepanel").style.width = "0";
 			}
 			
+			document.getElementById("Koka").innerHTML="Sowas macht er nicht"
 			document.getElementById("Nik").innerHTML="currently smoking"
 			document.getElementById("TH").innerHTML="currently mega high"
 			
